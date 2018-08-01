@@ -19,11 +19,11 @@ RUN pip install -r requirements.txt
 # add entrypoint.sh
 COPY ./entrypoint.sh /usr/src/app/entrypoint.sh
 
-#
-RUN chmod +x entrypoint.sh
-
 # add app
 COPY . /usr/src/app
+
+# make entrypoint.sh executable
+RUN chmod +x entrypoint.sh
 
 # run server
 CMD ["./entrypoint.sh"]
