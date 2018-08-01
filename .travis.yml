@@ -3,6 +3,13 @@ sudo: enabled
 services:
   - docker
 
+notifications:
+  email:
+    recipients:
+      - yorewole@gmail.com
+    on_success: always # default: change
+    on_failure: never # default: always
+
 env:
   DOCKER_COMPOSE_VERSION: 1.16.1
 
