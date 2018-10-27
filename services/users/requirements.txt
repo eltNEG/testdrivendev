@@ -6,3 +6,4 @@ gunicorn==19.7.1
 coverage==4.5.1
 flake8==3.5.0
 Flask-DebugToolbar==0.10.1
+flask-cors==3.0.6
